@@ -1,0 +1,14 @@
+dog(d1,'kelsey','aussie',bluemerle).
+dog(d3,'scarlett','aussie',blacktri).
+dog(d5,'scarlett','aussie',bluemerle).
+
+table(dog,[did,"name","breed",color]).
+dog(d1,'kelsey','aussie',bluemerle).
+dog(d3,'scarlett','aussie',blacktri).
+dog(d5,'scarlett','aussie',bluemerle).
+
+dog(d3,'scarlett','aussie',blacktri).
+
+table(dog,[did,"name","breed",color]).
+dog(d3,'scarlett','aussie',blacktri).
+

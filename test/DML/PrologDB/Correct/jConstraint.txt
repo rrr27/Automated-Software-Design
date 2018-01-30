@@ -1,0 +1,3 @@
+student name2 is not taking a course
+student name5 is not taking a course
+

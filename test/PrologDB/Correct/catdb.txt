@@ -1,0 +1,36 @@
+id arrows work!
+
+print all persons whose name begins with 'd' or 'p'
+table(person,[pid,name,age]).
+person(p1,don,64).
+person(p6,priscila,28).
+
+print all persons whose name begins with 'd' or 'p'
+table(division,[vid,name]).
+division(v1,clothing).
+division(v2,goods).
+
+print all persons whose name begins with 'd' or 'p'
+table(person,[pid,name,age]).
+person(p2,karen,57).
+person(p3,hanna,23).
+person(p6,priscila,28).
+
+who are the division colleagues of priscila
+table(person,[pid,name,age]).
+person(p1,don,64).
+person(p2,karen,57).
+person(p3,hanna,23).
+person(p6,priscila,28).
+
+print the children of persons
+table(person,[pid,name,age]).
+person(p3,hanna,23).
+person(p4,alex,25).
+
+are there children who work in the same department as their parent?
+karen and at least one of his/her children work in the following departments
+table(department,[did,name]).
+department(d2,womens).
+
+

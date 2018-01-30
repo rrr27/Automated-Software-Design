@@ -1,0 +1,6 @@
+[class0]
+[class1|f1|m1()]
+[class2|f1;f2|m1();m2()]
+[interface int2||m1();m2()]
+[interface int0]
+[interface int1||m1()]

@@ -1,0 +1,16 @@
+   This cannot be translated.  
+   This is chiefer message  
+   Frodo Baggins is king of the Shire.  
+   Another line that cannot be translated.  
+   Chiefers has been detected  
+   This has Scarlett and Chiefers messages  
+   Scarlett and Chiefers are what I have to say!  
+   I said bogus  
+   This is Scarlett message  
+   This cannot be translated.  
+   word(a1,'f','g').  
+   This has Don and Karen messages  
+
+
+   some blank lines.  
+   s  

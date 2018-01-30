@@ -1,0 +1,16 @@
+dbase(starTrek,[crewman,commander,lieutenant]).
+
+table(crewman,[cid,fname,lname]).
+table(commander,[cid,fname,lname,rank]).
+table(lieutenant,[cid,fname,lname,specialty]).
+
+subtable(crewman,[commander,lieutenant]).
+
+=========
+
+database starTrek has 
+   table    crewman with columns cid fname lname 
+   table  commander with columns cid fname lname rank 
+   table lieutenant with columns cid fname lname specialty 
+
+   table    crewman has subtables commander lieutenant 

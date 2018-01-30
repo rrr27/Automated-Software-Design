@@ -1,0 +1,7 @@
+table(dog_x_dog2,[dog.did,"dog.name","dog.breed",dog.color,dog2.did,"dog2.name","dog2.breed",dog2.color]).
+dog_x_dog2(d1,'kelsey','aussie',bluemerle,d1,'kelsey','aussie',bluemerle).
+dog_x_dog2(d2,'lassie','collie',sable,d2,'lassie','collie',sable).
+dog_x_dog2(d3,'scarlett','aussie',blacktri,d3,'scarlett','aussie',blacktri).
+dog_x_dog2(d4,'duke','hound dog',brown,d4,'duke','hound dog',brown).
+dog_x_dog2(d5,'scarlett','aussie',bluemerle,d5,'scarlett','aussie',bluemerle).
+

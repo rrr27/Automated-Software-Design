@@ -1,0 +1,8 @@
+[interface aint]
+[interface bint]
+[aclass]bc-a>[bclass]
+[cclass]<>x-y[dclass]
+[cclass]z-a++[aclass]
+[interface aint]^-.-[dclass]
+[interface aint]-^[interface bint]
+[bclass]^-[dclass]

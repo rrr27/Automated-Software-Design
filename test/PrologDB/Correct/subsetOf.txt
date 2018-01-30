@@ -1,0 +1,3 @@
+shortStudent is a subset of student
+student contains student(s1,A,15).
+ which shortStudent doesn't have

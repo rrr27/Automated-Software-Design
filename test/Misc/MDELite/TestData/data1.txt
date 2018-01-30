@@ -1,0 +1,16 @@
+This cannot be translated.
+My chiefer message
+Baggins of the Shire.
+Another line that cannot be translated.
+Chiefers has been detected   
+This has Scarlett and Chiefers messages
+My answers are Scarlett and Chiefers
+I said bogus
+My Scarlett message
+This cannot be translated.
+word(a1,'f','g').
+Don + Karen are my answers
+
+
+some blank lines.
+s

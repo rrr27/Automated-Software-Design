@@ -1,0 +1,8 @@
+table(crewman,[cid,fname,lname]).
+lieutenant(c3,hikaru,sulu,navigation).
+
+table(crewman,[cid,fname,lname]).
+lieutenant(c3,hikaru,sulu,navigation).
+
+table(crewman,[cid,fname,lname]).
+lieutenant(c3,hikaru,sulu,navigation).

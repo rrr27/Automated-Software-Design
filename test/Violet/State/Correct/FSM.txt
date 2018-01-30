@@ -1,0 +1,4 @@
+node nid=StateNode0 does not have an incoming edge
+
+Error count 1
+

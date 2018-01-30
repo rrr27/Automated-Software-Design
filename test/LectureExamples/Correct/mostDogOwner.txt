@@ -1,0 +1,3 @@
+table(owner,[oid,"name"]).
+owner(o2,'don').
+

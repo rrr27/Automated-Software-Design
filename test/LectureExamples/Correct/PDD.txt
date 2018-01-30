@@ -1,0 +1,37 @@
+1) id arrow test works!
+
+2) print all persons whose name begins with 'd' or 'p'
+table(Person,[pid,name,age]).
+Person(p1,don,64).
+Person(p6,priscila,28).
+
+3) print all divisions in which don works
+table(Division,[vid,name]).
+Division(v1,clothing).
+Division(v2,goods).
+
+4) print all persons that work in the same department as priscila
+table(Person,[pid,name,age]).
+Person(p2,karen,57).
+Person(p3,hanna,23).
+Person(p6,priscila,28).
+
+5) who are the division colleagues of priscila
+table(Person,[pid,name,age]).
+Person(p1,don,64).
+Person(p2,karen,57).
+Person(p3,hanna,23).
+Person(p6,priscila,28).
+
+6) print the children of employees that work in this company
+table(Person,[pid,name,age]).
+Person(p3,hanna,23).
+Person(p4,alex,25).
+
+7) are there children who work in the same department as their parent?
+
+karen and at least one of his/her children work in the following departments
+table(Department,[did,name,inDiv:Division]).
+Department(d2,womens,v1).
+
+

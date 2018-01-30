@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <html><head><meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type"><title>Violet and VPL Database Manual</title></head> <body><h1 style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">Violet and VPL Database Manual</span></h1><div style="text-align: center;"><a href="mailto:batory@cs.utexas.edu"><span style="font-family: Helvetica,Arial,sans-serif;">Don Batory</span></a><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Department of Computer Science</span><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">The University of Texas at Austin</span><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Austin, TX, USA</span><br style="font-family: Helvetica,Arial,sans-serif;"></div><span style="font-family: Helvetica,Arial,sans-serif;"></span><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;"><a href="http://alexdp.free.fr/violetumleditor/page.php">Violet</a> is a free Java tool for&nbsp; drawing UML class diagrams. </span><span style="font-family: Helvetica,Arial,sans-serif;">Familiarize yourself with Violet by installing MDELite and invoking it:</span><br style="font-family: Helvetica,Arial,sans-serif;"><pre style="font-family: monospace; margin-left: 40px; font-weight: bold;"><big>&gt; java MDL.Violet</big></pre><span style="font-family: Helvetica,Arial,sans-serif;">and drawing the diagram below:<br><br style="font-family: Helvetica,Arial,sans-serif;"></span><div style="text-align: center;"><img style="width: 345px; height: 65px;" alt="" src="figures/StudentCourse.jpg"><br></div><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Draw your own diagrams.&nbsp; When you feel comfortable, proceed to the next section.</span><br style="font-family: Helvetica,Arial,sans-serif;"><h2><span style="font-family: Helvetica,Arial,sans-serif;">Violet Database Schema</span></h2><span style="font-family: Helvetica,Arial,sans-serif;">Violet encodes a class diagram as an ugly XML file.&nbsp; The <span style="font-weight: bold;">MDL.ClassVioletParser</span> tool translates Violet-XML documents into a database that conforms to the following schema:</span><span style="font-family: Helvetica,Arial,sans-serif;"><br></span><span style="font-family: Helvetica,Arial,sans-serif;"></span><pre style="margin-left: 80px; font-weight: bold;"><big><span style="font-family: monospace;">% Violet (vpl) class database
+
+dbase(vpl,[vBox,vAssociation]).
+
+% type = c(class),i(nterface),n(ote).  packages are skipped
+
+table(vBox,[id,type,"name","fields","methods",x,y]).
+
+% type1,type2 = c(lass) or i(nterface)
+% lineStyle = ""(solid) or "DOTTED"
+% arrow1,2 = V, TRIANGLE, DIAMOND, BLACK_DIAMOND
+% bentStyle = "", HV, VH, HVH, VHV
+
+table(vAssociation,[id,cid1,type1,"role1","arrow1",cid2,type2,"role2","arrow2","bentStyle","lineStyle","middleLabel"]). </span></big></pre><span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;">Some notes:</span><ul><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">vBox</span> is the name of a table with 6 columns.</span></li><ul><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">id </span>is the internal identifier of a vBox tuple (class, interface, or note)</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">type</span> is "c" class or "i" interface or "n" for note</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">name</span>, <span style="font-weight: bold;">fields</span>, <span style="font-weight: bold;">methods</span> are single-quoted strings which contain the name of the class, t</span><span style="font-family: Helvetica,Arial,sans-serif;">he string of fields and methods for that class.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">x,y</span> are coordinate positions at which this class is displayed.</span></li></ul></ul><ul><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">vAssociation </span>is a table with 11 columns.</span></li><ul><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">id</span> is the internal identifier of an association.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">cid1,cid2</span> are identifiers of classes or interfaces to be connected.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">type1,type2</span> are enums with values "c" for class or "i" for interface to type <span style="font-weight: bold;">cid1</span> and <span style="font-weight: bold;">cid2</span>.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">role1,role2</span> -- is any text eg name and/or cardinality to be displayed.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">arrow1,arrow2</span> -- only&nbsp; values {V, NONE, TRIANGLE, DIAMOND, BLACK_DIAMOND}, where NONE is ''.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">linestyle</span> -- only&nbsp; values {SOLID, DOTTED}.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">bentStyle</span> -- only&nbsp; values {STRAIGHT (or blank),HV,VH,HVH,VHV}.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">middleLabel</span> -- should be blank, but this is the middle label on a Violet association<br></span></li></ul></ul><span style="font-family: Helvetica,Arial,sans-serif;">Let <span style="font-weight: bold;">SC.class.violet</span> be the Violet-produced XML file for StudentCourse.</span><span style="font-family: Helvetica,Arial,sans-serif;"> The following MDELite command translates this file into a VPL database <span style="font-weight: bold;">SC.vpl.pl</span>:</span><br style="font-family: Helvetica,Arial,sans-serif;"><pre style="font-family: monospace; margin-left: 40px; font-weight: bold;"><big>&gt; java MDL.VioletClassParser SC.class.violet SC.vpl.pl</big></pre><span style="font-family: Helvetica,Arial,sans-serif;">The database that is produced is:</span><br style="font-family: Helvetica,Arial,sans-serif;"><pre style="margin-left: 40px; font-weight: bold;"><big>dbase(vpl,[vBox,vAssociation]).
+
+table(vBox,[id,type,"name","fields","methods",x,y]).
+vBox(ClassNode0,c,'Student','name','',160.0,180.0).
+vBox(ClassNode1,c,'Course','name','',411.0,177.0).
+vBox(ClassNode2,c,'Student','name','',619.0,181.0).
+vBox(ClassNode3,c,'Course','name','',870.0,178.0).
+vBox(ClassNode4,c,'Student','name','',159.0,300.0).
+vBox(ClassNode5,c,'Course','name','',410.0,297.0).
+vBox(ClassNode6,c,'Course','name','',870.0,296.0).
+vBox(ClassNode7,c,'Student','name','',619.0,299.0).
+vBox(ClassNode8,c,'Course','name','',410.0,421.0).
+vBox(ClassNode9,c,'Student','name','',162.0,424.0).
+vBox(ClassNode10,c,'Course','name','',870.0,416.0).
+vBox(ClassNode11,c,'Student','name','',614.0,419.0).
+vBox(ClassNode12,c,'Course','name','',409.0,529.0).
+vBox(ClassNode13,c,'Student','name','',153.0,531.0).
+vBox(ClassNode14,c,'Course','name','',1275.0,184.0).
+vBox(ClassNode15,c,'Student','name','',1035.0,179.0).
+vBox(ClassNode16,c,'Student','name','',1038.0,290.0).
+vBox(ClassNode17,c,'Course','name','',1289.0,287.0).
+vBox(ClassNode18,c,'Course','name','',1291.0,406.0).
+vBox(ClassNode19,c,'Student','name','',1040.0,409.0).
+vBox(ClassNode20,c,'Person','name','',848.0,580.0).
+vBox(ClassNode21,c,'Person','name%','',646.0,567.0).
+vBox(ClassNode22,c,'x','','',1139.0,566.0).
+vBox(ClassNode23,c,'y','','',1339.0,575.0).
+
+table(vAssociation,[id,cid1,type1,"role1","arrow1",cid2,type2,"role2","arrow2","bentStyle","lineStyle","middleLabel"]).
+vAssociation(A0,ClassNode0,c,'has','',ClassNode1,c,'loves','','','','').
+vAssociation(A1,ClassNode2,c,'','',ClassNode3,c,'','','','','enroll').
+vAssociation(A2,ClassNode4,c,'','',ClassNode5,c,'takes','','','','').
+vAssociation(A3,ClassNode7,c,'','',ClassNode6,c,'','BLACK_DIAMOND','','','takes').
+vAssociation(A4,ClassNode9,c,'','',ClassNode8,c,'takes','','','','').
+vAssociation(A5,ClassNode11,c,'','',ClassNode10,c,'','DIAMOND','','','takes').
+vAssociation(A6,ClassNode13,c,'*','',ClassNode12,c,'*','','','','takes').
+vAssociation(A7,ClassNode15,c,'5','',ClassNode14,c,'2','','','','enroll').
+vAssociation(A8,ClassNode16,c,'4','',ClassNode17,c,'','BLACK_DIAMOND','','','takes').
+vAssociation(A9,ClassNode19,c,'4','',ClassNode18,c,'','DIAMOND','','','takes').
+vAssociation(A10,ClassNode20,c,'','',ClassNode20,c,'','','VHV','','parents,children').
+vAssociation(A11,ClassNode21,c,'parents','',ClassNode21,c,'chlidren','','HVH','','').
+vAssociation(A12,ClassNode22,c,'','',ClassNode22,c,'','V','HVH','','boo').
+vAssociation(A13,ClassNode23,c,'','',ClassNode23,c,'','V','HVH','','foo'). <br></big></pre><h2><span style="font-family: Helvetica,Arial,sans-serif;">VPL Constraints</span></h2><span style="font-family: Helvetica,Arial,sans-serif;">There indeed are VPL constraints.&nbsp; I have not posted them, as they are good</span><span style="font-family: Helvetica,Arial,sans-serif;"> examples for homework assignments.&nbsp; They are similar to those for YPL (VPL's</span><span style="font-family: Helvetica,Arial,sans-serif;"> Yuml counterpart). </span><br style="font-family: Helvetica,Arial,sans-serif;"></body></html> 

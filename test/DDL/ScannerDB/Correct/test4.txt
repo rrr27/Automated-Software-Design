@@ -1,0 +1,3 @@
+dbas ((abc,[id]).
+parse error table expected at >>dbas ((abc,[id]).
+

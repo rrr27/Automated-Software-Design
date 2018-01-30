@@ -1,0 +1,2 @@
+[class0|'ab;cd;ef]
+class0 'ab;cd;ef _NoThInG_ 

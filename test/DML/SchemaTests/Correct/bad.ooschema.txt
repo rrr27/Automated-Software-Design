@@ -1,0 +1,3 @@
+at line 3 unable to parse table in bad.ooschema.pl 
+ at line 3 table defined before dbase
+

@@ -1,0 +1,3 @@
+dbase((abc,[id]).
+parse error name, number or quoted string expected at >>(abc,[id]).
+

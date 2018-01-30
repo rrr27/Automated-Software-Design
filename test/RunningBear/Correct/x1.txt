@@ -1,0 +1,12 @@
+class entity  {
+   String name;
+}
+
+class student extends entity {
+   String UTEID;
+}
+
+class course extends entity {
+   String profName;
+}
+

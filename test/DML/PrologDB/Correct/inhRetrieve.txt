@@ -1,0 +1,31 @@
+table(pet,[did,"name"]).
+pet(d0,'dumbo').
+pet(d00,'nemo').
+dog(d1,'kelsey','aussie',bluemerle).
+dog(d2,'lassie','collie',sable).
+dog(d3,'scarlett','aussie',blacktri).
+dog(d4,'duke','hound dog',brown).
+cat(d5,'tigger','bengal').
+cat(d6,'lucy','tabby').
+
+table(pet,[did,"name"]).
+pet(d0,'dumbo').
+pet(d00,'nemo').
+dog(d1,'kelsey','aussie',bluemerle).
+dog(d2,'lassie','collie',sable).
+dog(d3,'scarlett','aussie',blacktri).
+dog(d4,'duke','hound dog',brown).
+cat(d5,'tigger','bengal').
+cat(d6,'lucy','tabby').
+
+list of all pets whose name starts with 'l'
+table(pet,[did,"name"]).
+dog(d2,'lassie','collie',sable).
+cat(d6,'lucy','tabby').
+
+
+version 2
+table(pet,[did,"name"]).
+dog(d2,'lassie','collie',sable).
+cat(d6,'lucy','tabby').
+

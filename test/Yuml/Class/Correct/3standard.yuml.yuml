@@ -1,0 +1,5 @@
+[User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()]
+[User]^-[Customer]
+[Customer]<>-orders*>[Order]
+[Order]++-0..*>[LineItem]
+[Order]-[Root]

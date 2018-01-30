@@ -1,0 +1,13 @@
+yumlBox(b1...) and yumlBox(b1...) both have id = b1
+yumlAssociation(a1...) and yumlAssociation(a1...) both have id = a1
+yumlBox(b7...) and yumlBox(b5...) both have name = donb
+yumlAssociation(a1...) has box1='b3' : not a legal reference
+yumlAssociation(a1...) has box2='b2' : not a legal reference
+yumlAssociation(a1...) has box2='b2' : not a legal reference
+yumlBox(b5...) has interfaces should have no fields
+yumlBox(b6...) has notes should have no fields or methods
+yumlAssociation(a6...) has linestyle should be dashed
+yumlAssociation(a7...) has linestyle should be dashed
+
+Error count 10
+

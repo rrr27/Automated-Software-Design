@@ -1,0 +1,4 @@
+domain(d1...) java executable 'Violet.StateConform1' does not exist or is not on classpath
+arrow(a0...) java executable 'Violet.StateParser2' does not exist or is not on classpath
+arrow(a2...) java executable 'Boot.MDELite.meta2java1' does not exist or is not on classpath
+

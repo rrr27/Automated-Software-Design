@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="MDELite">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/MDELite7.zip!/MDELite7/src" />
+      <root url="jar://$USER_HOME$/Downloads/MDELite7.zip!/MDELite7/test" />
+    </SOURCES>
+  </library>
+</component>

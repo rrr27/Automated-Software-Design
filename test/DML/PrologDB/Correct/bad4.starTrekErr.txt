@@ -1,0 +1,3 @@
+at line 5 unable to parse table in bad4.starTrek.pl 
+ at line 5 table defined before dbase
+

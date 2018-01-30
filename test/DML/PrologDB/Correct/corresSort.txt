@@ -1,0 +1,15 @@
+table(longhorns,[lid,"name",pos]).
+longhorns(l2,'Dwayne Haskins',qb).
+longhorns(l1,'Denzel Ward',cb).
+longhorns(l3,'Nick Bosa',dl).
+
+table(longhorns,[lid,"name",pos]).
+longhorns(l2,'Dwayne Haskins',qb).
+longhorns(l1,'Denzel Ward',cb).
+longhorns(l3,'Nick Bosa',dl).
+
+table(longhorns,[lid,"name",pos]).
+longhorns(l1,'Denzel Ward',cb).
+longhorns(l2,'Dwayne Haskins',qb).
+longhorns(l3,'Nick Bosa',dl).
+

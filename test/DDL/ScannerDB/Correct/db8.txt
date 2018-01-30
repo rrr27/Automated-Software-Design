@@ -1,0 +1,3 @@
+dbase(abc,[id,'abc'])
+parse error name expected at >>'abc'])
+

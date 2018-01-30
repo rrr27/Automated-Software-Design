@@ -1,0 +1,5 @@
+Cycle found: [a,d,e,a]
+Cycle found: [dd,ee,aa,dd]
+
+Error count 2
+

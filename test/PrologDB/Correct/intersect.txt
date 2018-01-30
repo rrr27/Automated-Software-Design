@@ -1,0 +1,4 @@
+shortStudent is subset of student
+table(student,[sid,name,age]).
+student(s4,D,16).
+

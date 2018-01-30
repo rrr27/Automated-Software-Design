@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_40" class="java.beans.XMLDecoder">
+ <object class="com.horstmann.violet.ClassDiagramGraph">
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
+    <void property="attributes">
+     <void property="text">
+      <string>domain=class;
+ext = violet;
+isTemp = false;
+</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Violet toViolet() = classVioletParser.Main.java;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>VClass</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double0">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>79.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>87.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>79.0</double>
+     <double>87.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode1">
+    <void property="attributes">
+     <void property="text">
+      <string>ext = pl;
+isTemp = true;
+domain = violet;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>VClass toVclass() = violetXml.vm;
+Sdb toSdb() = violet2sdb.pl;
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Violet</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double1">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>447.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>93.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>447.0</double>
+     <double>93.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = sdb;
+ext = pl;
+isTemp = true;
+</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Violet toViolet() = sdb2violet.pl;
+Yuml toYuml() = sdb2yuml.pl;
+Nopos toNoPos() =sdb2sdbnopos.pl;
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Sdb</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double2">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>712.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>91.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>712.0</double>
+     <double>91.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode3">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = nopos;
+ext = pl;
+isTemp= true;
+</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Dot toDot()  =  sdbnopos2dot.vm;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Nopos</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double3">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double3"/>
+      <double>935.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double3"/>
+      <double>91.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>935.0</double>
+     <double>91.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode4">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = dot;
+ext = dot;
+isTemp = true;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Kielerdot Kieler() = Positioner.Main.java;
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Dot</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double4">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double4"/>
+      <double>1162.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double4"/>
+      <double>101.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>1162.0</double>
+     <double>101.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode5">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = kielerdot;
+ext = dot;
+isTemp = true;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Pos toPos() = kielerDot2Pos.Main.java;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Kielerdot
+</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double5">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double5"/>
+      <double>1164.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double5"/>
+      <double>286.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>1164.0</double>
+     <double>286.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode6">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = pos;
+ext = pl;
+isTemp = true;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Sdb merge(Nopos) = possdbnopos2sdb.pl;
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Pos</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double6">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double6"/>
+      <double>889.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double6"/>
+      <double>291.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>889.0</double>
+     <double>291.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode7">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = yuml;
+ext = pl;
+isTemp = true;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>YClass toYclass() = yumlpl2yuml.vm;
+Sdb toSdb() = yuml2sdb.pl;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Yuml</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double7">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double7"/>
+      <double>450.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double7"/>
+      <double>225.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>450.0</double>
+     <double>225.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode8">
+    <void property="attributes">
+     <void property="text">
+      <string>domain = yclass;
+ext = yuml;
+isTemp = false;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Yuml toYuml() = classYumlParser.Main.java;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>YClass</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double8">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double8"/>
+      <double>77.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double8"/>
+      <double>231.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>77.0</double>
+     <double>231.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode9">
+    <void property="attributes">
+     <void property="text">
+      <string>domain= start;
+ext = tmp;
+isTemp = true;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>Start getStarted() = getStarted.Main.java;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Start</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double9">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double9"/>
+      <double>89.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double9"/>
+      <double>404.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>89.0</double>
+     <double>404.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.NoteNode" id="NoteNode0">
+    <void property="text">
+     <void property="text">
+      <string>Paths
+yuml2violet = toYuml.toSdb.toNoPos.toDot.Kieler.toPos.merge.toViolet.toVclass;
+violet2yuml = toViolet.toSdb.toYuml.toYclass;
+help = getStarted;</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double10">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double10"/>
+      <double>413.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double10"/>
+      <double>435.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>413.0</double>
+     <double>435.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

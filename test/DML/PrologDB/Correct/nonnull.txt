@@ -1,0 +1,9 @@
+takes(t10...) has null cid field
+takes(t12...) has null cid field
+takes(t11...) has null sid field
+takes(t12...) has null sid field
+takes(t10...) has cid is null
+takes(t12...) has cid is null
+takes(t11...) has sid is null
+takes(t12...) has sid is null
+

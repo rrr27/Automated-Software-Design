@@ -1,0 +1,6 @@
+company contract value violated in kid=k3
+company contract value violated in kid=k5
+person contract value violated in kid=k2
+person contract value violated in kid=k5
+ownership failure in kid=k5
+

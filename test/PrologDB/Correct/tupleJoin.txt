@@ -1,0 +1,6 @@
+table(student_x_enroll,[student.sid,student.name,student.age,enroll.eid,enroll.sid,enroll.cid]).
+student_x_enroll(s1,A,15,e1,s1,c1).
+student_x_enroll(s1,A,15,e2,s1,c5).
+
+table(student_x_enroll,[student.sid,student.name,student.age,enroll.eid,enroll.sid,enroll.cid]).
+

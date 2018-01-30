@@ -1,0 +1,5 @@
+table(student,[sid,name,age]).
+student(s4,D,16).
+
+table(course,[cid,name,prof]).
+

@@ -1,0 +1,2 @@
+[class0|'ab;cd;ef'|4]
+class0 'ab;cd;ef' 4 

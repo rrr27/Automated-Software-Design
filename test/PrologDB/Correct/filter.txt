@@ -1,0 +1,4 @@
+table(course,[cid,name,prof]).
+course(c1,X,xp).
+course(c2,Y,xp).
+

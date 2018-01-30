@@ -1,0 +1,8 @@
+1 collie
+3 aussie
+1 hound dog
+table(result,[count,breed]).
+result(1,collie).
+result(3,aussie).
+result(1,hound dog).
+

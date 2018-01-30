@@ -1,0 +1,7 @@
+[Batory]
+[Customer]<>1-*>[Order]
+[Customer]->[Billing Address]
+[Customer]1-0..*[Address]
+[Order]-billing>[Address]
+[Order]-shipping>[Address]
+[Company]<>-1>[Location]

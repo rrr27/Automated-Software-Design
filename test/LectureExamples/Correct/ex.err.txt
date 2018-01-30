@@ -1,0 +1,6 @@
+contract(k3...) has company contract value violated
+contract(k5...) has company contract value violated
+contract(k2...) has person contract value violated
+contract(k5...) has person contract value violated
+contract(k5...) has ownership failure
+

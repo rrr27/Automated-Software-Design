@@ -1,0 +1,12 @@
+multiple tuples with id='d1'
+multiple tuples with id='a2'
+domain(d2...) and domain(d1...) both have name = fsm
+domain(d1...) and domain(d1...) both have name = fsm
+arrow(a2...) and arrow(a2...) both have name = m2t
+path(p3...) and path(p2...) both have name = validateViolet
+multiple arrows have name m2t
+multiple paths have name validateViolet
+path(p5...) has same name as arrow m2m
+arrow(a1...) references nonexistent domain meta
+domain(d1...) java executable 'Violet.StateConform' does not exist or is not on classpath
+

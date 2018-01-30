@@ -1,0 +1,1 @@
+File bad5.starTrek.pl is not a valid dbSchema

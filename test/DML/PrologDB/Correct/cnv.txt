@@ -1,0 +1,6 @@
+crewman(c1,mr,spock).
+commander(c2,james,kirk,captain).
+lieutenant(c3,hikaru,sulu,navigation).
+crewman(c1,mr,spock).
+commander(c2,james,kirk,captain).
+lieutenant(c3,hikaru,sulu,navigation).

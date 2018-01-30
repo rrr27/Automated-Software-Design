@@ -1,0 +1,10 @@
+BEGIN cross schema tests 
+
+table(dog,[did,"name","breed",color]).
+table(owner,[oid,"name"]).
+table(dog_x_owner,[dog.did,"dog.name","dog.breed",dog.color,owner.oid,"owner.name"]).
+table(when,[wid,did,oid,"date"]).
+table(dog_x_when,[dog.did,"dog.name","dog.breed",dog.color,when.wid,when.did,when.oid,"when.date"]).
+table(dog_x_when_x_owner,[dog.did,"dog.name","dog.breed",dog.color,when.wid,when.did,when.oid,"when.date",owner.oid,"owner.name"]).
+
+END cross schema tests

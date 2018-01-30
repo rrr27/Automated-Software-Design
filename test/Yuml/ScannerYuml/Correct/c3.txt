@@ -1,0 +1,2 @@
+[class0  |  'klass1'   |   'j4']
+class0 'klass1' 'j4' 

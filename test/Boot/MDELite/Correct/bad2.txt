@@ -1,0 +1,5 @@
+arrow(a0...) references nonexistent domain stater
+arrow(a1...) references nonexistent domain metaa
+domain(d1...) java executable 'Violet.StateConform' does not exist or is not on classpath
+arrow(a0...) java executable 'Violet.StateParser' does not exist or is not on classpath
+

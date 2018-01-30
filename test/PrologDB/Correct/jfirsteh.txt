@@ -1,0 +1,5 @@
+enroll(e1,s1,c1).
+---
+Cannot find tuple in table enroll where sid = s12
+
+---

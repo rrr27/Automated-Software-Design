@@ -1,0 +1,7 @@
+[interface ITask]
+[interface Session]
+[interface ITask]^-.-[NightlyBillingTask]
+[Company]++-1>[Location]
+[Location]<>->[Point]
+[Wages]^-[Contractor]
+[Wages]^-[Salaried]

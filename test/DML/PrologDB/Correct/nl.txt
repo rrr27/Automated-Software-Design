@@ -1,0 +1,5 @@
+name duplicate scarlett
+name duplicate scarlett
+
+errors found
+DONE

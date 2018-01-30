@@ -1,0 +1,6 @@
+Both constraint violated k5
+company constraint violated k3
+company constraint violated k5
+person constraint violated k2
+person constraint violated k5
+

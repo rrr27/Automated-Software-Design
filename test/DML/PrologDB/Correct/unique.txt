@@ -1,0 +1,4 @@
+multiple tuples with id='c3'
+course table has multiple tuples with id='c3'
+course(c3...) and course(c3...) both have cid = c3
+

@@ -1,0 +1,1 @@
+File nonsense.ooschema.pl is not a valid dbSchema

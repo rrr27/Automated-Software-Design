@@ -1,0 +1,1 @@
+Database file bad.violetdb.pl does not exist or can't be opened

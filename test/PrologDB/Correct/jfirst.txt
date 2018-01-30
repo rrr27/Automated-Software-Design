@@ -1,0 +1,4 @@
+enroll(e1,s1,c1).
+---
+no join result
+---

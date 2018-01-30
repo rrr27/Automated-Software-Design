@@ -1,0 +1,5 @@
+vAssociation(A3...) has arrow1=TRIANGLE implies (arrow2 is empty and role1 is empty and role2 is empty)
+vAssociation(A2...) has arrow1=TRIANGLE implies (arrow2 is empty and role1 is empty and role2 is empty)
+
+Error count 2
+

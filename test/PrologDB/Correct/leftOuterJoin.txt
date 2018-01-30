@@ -1,0 +1,11 @@
+table(student_x_enroll,[student.sid,student.name,student.age,enroll.eid,enroll.sid,enroll.cid]).
+student_x_enroll(s1,A,15,e1,s1,c1).
+student_x_enroll(s1,A,15,e2,s1,c5).
+student_x_enroll(s2,B,16,e3,s2,c3).
+student_x_enroll(s2,B,16,e4,s2,c4).
+student_x_enroll(s3,C,15,e5,s3,c5).
+student_x_enroll(s4,D,16,null,null,null).
+student_x_enroll(s5,E,17,e6,s5,c2).
+student_x_enroll(s5,E,17,e7,s5,c3).
+student_x_enroll(s6,F,18,e8,s6,c1).
+

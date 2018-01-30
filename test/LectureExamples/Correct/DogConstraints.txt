@@ -1,0 +1,20 @@
+table(dog,[did,"name","breed",color]).
+dog(d1,'kelsey','aussie',bluemerle).
+dog(d3,'scarlett','aussie',blacktri).
+dog(d5,'scarlett','aussie',bluemerle).
+
+dog(d1,'kelsey','aussie',bluemerle).
+dog(d3,'scarlett','aussie',blacktri).
+dog(d5,'scarlett','aussie',bluemerle).
+=======
+table(dog,[did,"name","breed",color]).
+dog(d4,'duke','hound dog',brown).
+
+dog(d4,'duke','hound dog',brown).
+=======
+dog(d5...) and dog(d3...) both have name = scarlett
+--------
+dog(d5...) and dog(d3...) both have name = scarlett
+--------
+multiple dogs have name='scarlett'
+

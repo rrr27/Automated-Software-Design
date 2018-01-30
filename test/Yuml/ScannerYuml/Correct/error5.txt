@@ -1,0 +1,3 @@
+[class0]-<[class1]
+parse error left bracket expected at >><[class1]
+

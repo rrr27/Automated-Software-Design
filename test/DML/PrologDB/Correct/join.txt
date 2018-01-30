@@ -1,0 +1,14 @@
+table(dog_x_when,[dog.did,"dog.name","dog.breed",dog.color,when.wid,when.did,when.oid,"when.date"]).
+dog_x_when(d1,'kelsey','aussie',bluemerle,w1,d1,o2,'88-95').
+dog_x_when(d2,'lassie','collie',sable,w2,d2,o1,'58-71').
+dog_x_when(d3,'scarlett','aussie',blacktri,w3,d3,o3,'07-12').
+dog_x_when(d3,'scarlett','aussie',blacktri,w4,d3,o2,'12-').
+dog_x_when(d4,'duke','hound dog',brown,w5,d4,o4,'58-69').
+
+table(dog_x_when_x_owner,[dog.did,"dog.name","dog.breed",dog.color,when.wid,when.did,when.oid,"when.date",owner.oid,"owner.name"]).
+dog_x_when_x_owner(d1,'kelsey','aussie',bluemerle,w1,d1,o2,'88-95',o2,'don').
+dog_x_when_x_owner(d2,'lassie','collie',sable,w2,d2,o1,'58-71',o1,'timmy').
+dog_x_when_x_owner(d3,'scarlett','aussie',blacktri,w3,d3,o3,'07-12',o3,'helen').
+dog_x_when_x_owner(d3,'scarlett','aussie',blacktri,w4,d3,o2,'12-',o2,'don').
+dog_x_when_x_owner(d4,'duke','hound dog',brown,w5,d4,o4,'58-69',o4,'jed').
+

@@ -1,0 +1,1 @@
+at line 12 in file bad2.starTrek.pl : insufficient number of values for a tuple of table lieutenant

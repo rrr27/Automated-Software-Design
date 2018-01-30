@@ -1,0 +1,3 @@
+table(abc[id]).
+parse error comma expected at >>[id]).
+

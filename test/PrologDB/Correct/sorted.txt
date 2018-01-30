@@ -1,0 +1,8 @@
+table(student,[sid,name,age]).
+student(s1,A,15).
+student(s3,C,15).
+student(s2,B,16).
+student(s4,D,16).
+student(s5,E,17).
+student(s6,F,18).
+

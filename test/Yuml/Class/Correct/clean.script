@@ -1,0 +1,4 @@
+rm -f *.pl *1.yuml* *~ *S.yuml *patched* *.dot *.xml
+echo testDataYuml Directory:
+ls *
+echo

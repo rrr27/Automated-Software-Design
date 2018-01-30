@@ -1,0 +1,12 @@
+vBox(InterfaceNode1...) and vBox(InterfaceNode1...) both have id = InterfaceNode1
+vAssociation(A5...) and vAssociation(A5...) both have id = A5
+vAssociation(A5...) has cid1='ClassNode00' : not a legal reference
+vAssociation(A5...) has cid2='ClassNode22' : not a legal reference
+vBox(InterfaceNode1...) has interfaces should have no fields
+vBox(NoteNode0...) has notes should have no fields or methods
+vAssociation(A1...) has arrow1=TRIANGLE implies (arrow2 is empty and role1 is empty and role2 is empty)
+vAssociation(A3...) has arrow1=TRIANGLE implies (arrow2 is empty and role1 is empty and role2 is empty)
+vAssociation(A5...) has association should not have a middleLabel
+
+Error count 9
+

@@ -1,0 +1,15 @@
+node nid=StateNode0 does not have an incoming edge
+node nid=StateNode1 does not have an incoming edge
+node nid=StateNode2 does not have an incoming edge
+node nid=Void3 does not have an incoming edge
+node nid=Void4 does not have an incoming edge
+node nid=Void5 does not have an incoming edge
+node nid=StateNode0 does not have an outgoing edge
+node nid=StateNode1 does not have an outgoing edge
+node nid=StateNode2 does not have an outgoing edge
+node nid=Void0 does not have an outgoing edge
+node nid=Void1 does not have an outgoing edge
+node nid=Void2 does not have an outgoing edge
+
+Error count 12
+

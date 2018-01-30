@@ -1,0 +1,4 @@
+[connection|end1;end2;name1;name2;role1;role2;comma;quote;connectionS;|_connection(String String String String String String);_dump();]
+[klass|fields;id;methods;name;|_klass(String String String);_klass(String#);_toId(String);_dump();]
+[Main||_Main();_checkNameStructure(String);_err(String);_main(String#);_printArray(String String#);]
+

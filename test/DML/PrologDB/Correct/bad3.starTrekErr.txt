@@ -1,0 +1,3 @@
+at line 14 unable to parse table in bad3.starTrek.pl 
+ Table crewman not in dbSchema starTrek
+

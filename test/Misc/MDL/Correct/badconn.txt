@@ -1,0 +1,2 @@
+Tables with name person do not have same number of columns
+schemas test/Misc/MDL/TestData/conn.schema.pl and test/Misc/MDL/TestData/bad.conn.pl do not match

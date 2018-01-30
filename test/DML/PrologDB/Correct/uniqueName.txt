@@ -1,0 +1,4 @@
+student(s8...) and student(s1...) both have name = name1
+student(s8...) and student(s1...) both have name = name1
+multiple tuples in student have name='name1'
+

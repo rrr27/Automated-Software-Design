@@ -1,0 +1,6 @@
+takes(t8...) and takes(t7...) both have combo = 'c4,s3'
+takes(t17...) and takes(t9...) both have combo = 'c4,s8'
+------
+takes(t8...) and takes(t7...) both have combo = 'c4,s3'
+takes(t17...) and takes(t9...) both have combo = 'c4,s8'
+

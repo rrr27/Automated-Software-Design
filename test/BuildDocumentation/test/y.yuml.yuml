@@ -1,0 +1,6 @@
+[interface;Closable|close()]
+[interface;NetworkChannel|bind();getLocalAddress();getOption();setOption();supportedOptions()]
+[MyClass|_MyClass();close()]
+[interface;Closable]^-.-[MyClass]
+[YourClass]<>-3>[MyClass]
+[interface;Closable]^-[interface;NetworkChannel]

@@ -1,0 +1,5 @@
+vAssociation(A0...) has arrow1=TRIANGLE implies (arrow2 is empty and role1 is empty and role2 is empty)
+vAssociation(A0...) has association should not have a middleLabel
+
+Error count 2
+

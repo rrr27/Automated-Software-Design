@@ -1,0 +1,13 @@
+takes(t10,..) has invalid cid value (null)
+takes(t12,..) has invalid cid value (null)
+takes(t14,..) has invalid cid value (c6)
+takes(t19,..) has invalid cid value (c0)
+takes(t10,..) has invalid cid value (null)
+takes(t12,..) has invalid cid value (null)
+takes(t14,..) has invalid cid value (c6)
+takes(t19,..) has invalid cid value (c0)
+takes(t10...) has cid='null' : not a legal reference
+takes(t12...) has cid='null' : not a legal reference
+takes(t14...) has cid='c6' : not a legal reference
+takes(t19...) has cid='c0' : not a legal reference
+

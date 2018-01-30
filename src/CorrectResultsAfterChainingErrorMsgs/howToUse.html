@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head><meta content="text/html;charset=UTF-8" http-equiv="Content-Type"><!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+        
+        <title>Updating Correct files after Changing Error Messages</title><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="batory" name="author"></head>
+
+
+    <body>
+        <h1 style="font-family: Helvetica,Arial,sans-serif;">Updating Correct files after Changing Error Messages</h1><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">MDELite
+tests are based on file regression tests. &nbsp;That is, an MDELite
+program produces a file. &nbsp;During a regression test, a new file is
+produced and it is compared with a "Correct" version of this file.
+&nbsp;If exactly the same text appears in both files, the regression
+test passes.</span><br style="font-family: Helvetica,Arial,sans-serif;"><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Now
+this becomes problem if error messages are updated, even slightly.
+&nbsp;Tracking down small textual changes in hundreds of files is
+extraordinarilly time consuuming. &nbsp;So I built a tool that takes
+converts statements made by outdated Error and ParsE error reports and
+refresh these statements with the new format.<br><br>Example: An Error is an enum with a value and a "parameterized explanation", like so:<br><br>anError("in file FILE you should have named variable VAR1 to VAR2")<br><br>In
+the string explanation, all words that are in all CAPITALS (and that
+they are not just one character long) are treated as String parameters.
+&nbsp;When this error is reported, arguments for these parameters must
+be provided, as in:<br><br>Error.throw(Error.anError, filename, varname1, varname2);<br><br>The
+anError String is converted into a Java format string&nbsp;"in file %s
+you should have named variable %s to %s" and then arguments are
+supplied for each string %s marker.<br><br>So here's how the tool
+works: it read a Correct file and for each line, the tool sees if it
+can parse the line as an existing parameterized explanation. &nbsp;If
+so, it then rewrite the line using the new &nbsp;parameterized
+explanation string. &nbsp;The tool does this for every file in a
+Correct directory for all Correct directories under test/.<br><br></span><h2 style="font-family: Helvetica,Arial,sans-serif;">How to invoke the Update Correct Files Tool</h2><span style="font-family: Helvetica,Arial,sans-serif;">Before you do anything, make sure that all regression tests of MDELite7 work. &nbsp;Next do the following:</span><ol style="font-family: Helvetica,Arial,sans-serif;"><li>In the <span style="font-weight: bold;">CorrectResultsAfterChangingErrorMsgs/</span> directory, delete <span style="font-weight: bold;">Error.java</span> and <span style="font-weight: bold;">ParsE.java</span>.&nbsp;<br></li><li>Copy via refactoring the <span style="font-weight: bold; color: black;">MDELite/</span> directory files <span style="font-weight: bold;">Error.java</span> and <span style="font-weight: bold;">ParsE.java</span> to the <span style="font-weight: bold;">CorrectResultsAfterChangingErrorMsgs/</span> directory.<br></li><li>Copy the entire<span style="font-weight: bold;"> test/</span> directory of <span style="font-weight: bold;">MDELite7</span> and rename the copy<span style="font-weight: bold;"> testBackup/</span>. &nbsp;The <span style="font-weight: bold;">testBackup</span> directory should be the same directory as <span style="font-weight: bold;">test/</span>.</li></ol><span style="font-family: Helvetica,Arial,sans-serif;">At
+this point, you are ready to proceed to edit MDELite/Error.java and
+MDELite/ParsE.java to change the error messages to that which you want
+to use.</span><br style="font-family: Helvetica,Arial,sans-serif;"><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Once you have made all your message changes, it is time to update the Correct directories. &nbsp;Here's how to do this:</span><br style="font-family: Helvetica,Arial,sans-serif;"><ol style="font-family: Helvetica,Arial,sans-serif;"><li>Compile MDELite7 to make sure there are no type errors.</li><li>Run
+UpdateCorrectFiles.java from the Netbeans IDE. &nbsp;It will post a
+Java GUI dialog to remind you of &nbsp;the three things that you should
+have done above. &nbsp;Then it will ask for a password -- which you can
+extract from the code of UpdateCorrectFiles.java. &nbsp;If the password
+you supply is correct, all Correct files will be updated accordingly.
+This update should take but a few seconds at most.</li><li>Next, compile MDELite7 again, and run the regression tests. &nbsp;If
+the update was correctly performed -- and it should.... --- you should
+get no errors and that the correct files are now using the latest&nbsp;
+Error explanations.</li></ol><h2 style="font-family: Helvetica,Arial,sans-serif;"></h2>
+    </body></html>

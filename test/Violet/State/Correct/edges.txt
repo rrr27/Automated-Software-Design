@@ -1,0 +1,6 @@
+node nid=StateNode0 does not have an outgoing edge
+node nid=StateNode1 does not have an outgoing edge
+node nid=StateNode2 does not have an outgoing edge
+
+Error count 3
+
