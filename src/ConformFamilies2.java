@@ -25,12 +25,12 @@ public class ConformFamilies2 {
         //Check if both sonOf and daughterOf is filled
         Constraints.iftest(member,
                 t->(!t.isNull("sonOf") && !t.isNull("daughterOf")),
-                "son daughter both present failure", er);
+                "present as both son and daughter failure", er);
 
         //Check whether sonOf or daughterOf is present only for 1 family
-        Constraints.isUnique(member,"mid",er);
+        //Constraints.isUnique(member,"mid",er);
 
-        //Same check for member present in multiple families
+        //Same check for member present in multiple families - add this
         member.project("mid")
                 .duplicates()
                 .error(er,"same member '%s' present in multiple families",t->t.get("mid"));

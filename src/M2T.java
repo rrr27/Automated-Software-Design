@@ -9,7 +9,7 @@ public class M2T extends MDELite.RunningBear{
 
         // Step 1: standard marquee processing
         Marquee2Arguments mark = new Marquee2Arguments(M2M.class,
-                ".pl", ".txt", args);
+                "families1.pl", ".txt", args);
         String inputFileName = mark.getInputFileName();
 
         // Step 2: read the families database and their tables
@@ -22,6 +22,7 @@ public class M2T extends MDELite.RunningBear{
         for(Tuple c : member.tuples()){
             StringBuffer sb = new StringBuffer();
             sb.append(c.get("firstName") + " ");
+            // fid is not null means is son or daughter
             if(!c.get("fid").equalsIgnoreCase("null")) {
                 Table attr = c.rightSemiJoin("fid", family, "fid");
                 sb.append(attr.tuples().get(0).get("lastName") + " has parents ");
