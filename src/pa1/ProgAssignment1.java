@@ -1,3 +1,5 @@
+package pa1;
+
 public class ProgAssignment1 {
     public static void main(String[] args) throws Exception {
 

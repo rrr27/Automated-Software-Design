@@ -1,3 +1,5 @@
+package pa1;
+
 import MDELite.Marquee1Argument;
 
 public class HelloWorld extends MDELite.RunningBear {

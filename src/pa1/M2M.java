@@ -1,9 +1,10 @@
+package pa1;
+
 import PrologDB.DBSchema;
 import PrologDB.DB;
 import PrologDB.Tuple;
 import PrologDB.Table;
 import MDELite.Marquee2Arguments;
-import PrologDB.ColumnCorrespondence;
 
 public class M2M {
 
